@@ -2,6 +2,7 @@ console.log('----- Task 1: Slugify -----');
 function slugify(title) {
   return title
     .trim()
+    .toLowerCase()
     .split(" ")
     .join("-");
 }
